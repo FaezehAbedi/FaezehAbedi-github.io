@@ -1,0 +1,98 @@
+<?php
+    include 'database/db2.php';
+
+    if(isset($_POST['submit'])){
+       $usern = $_POST['username'];
+       $lastn = $_POST['lastname'];
+       $rn = $_POST['rname'];
+       $cnu = $_POST['cnum'];
+       $send_result = $conn->prepare("insert into sellerstable set username = ? , lastname=?  , rname=?  , cnum=?");
+       $send_result -> bindValue(1 , $usern);
+       $send_result -> bindValue(2 , $lastn);
+       $send_result -> bindValue(3 , $rn);
+       $send_result -> bindValue(4 , $cnu);
+       $send_result -> execute();
+    }
+  
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sellers</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style-login.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+  <div class="top-menu" >
+        
+    <h1><a href="index.html">IRANIAN FOOD</a></h1>
+    
+    <nav class="nav" id="menu">
+      <ul>
+        <li class="top-menu-item">
+          <a href="#contact" >Contact Us</a>
+        </li>
+        <li class="top-menu-item">
+          <a href="#food-menu" >Food Menu</a>
+        </li>
+        
+    </nav>
+      <div class="pt-5">  
+  
+<div class="container">  
+  <div class="row">  
+    <div class="col-md-5 mx-auto">  
+      <div class="card card-body seller-form">  
+    <form id="submitForm" action="#" method="POST" data-parsley-validate="" data-parsley-errors-messages-disabled="true" novalidate="" _lpchecked="1">  
+      <input type="hidden" name="username" value="7635eb83-1f95-4b32-8788-abec2724a9a4">  
+      
+      <div class="form-group required">  
+      <lSabel class="d-flex" for="username"> Enter your First Name </lSabel>  
+      <input type="text" class="form-control text-lowercase" id="username" required="" name="username" value="">  
+      </div>                      
+      
+      <div class="form-group required">  
+      <label class="d-flex flex-row align-items-center" for="lastname"> Enter your Last Name   
+      </label>
+      <input type="text" class="form-control" required="" id="lastname" name="lastname" value="">  
+      </div>  
+
+      <div class="form-group required">  
+      <label class="d-flex flex-row align-items-center" for="rname"> Enter your Restaurant/Catering's Name  
+      </label>  
+      <input type="text" class="form-control" required="" id="rname" name="rname" value="">  
+      </div>
+
+      <div class="form-group required">  
+      <label class="d-flex flex-row align-items-center" for="password"> Enter your Credit-Card Number
+      </label>  
+      <input type="number" class="form-control" required="" id="cnum" name="cnum" value="">  
+      </div>
+       
+      <div class="form-group pt-1">  
+      <button class="btn btn-primary btn-block" name="submit" type="submit"> Sign Up </button>  
+        </div>  
+    </form>  
+                
+        </div>  
+      </div>  
+    </div>  
+  </div>  
+</div>  
+</body>
+</html>

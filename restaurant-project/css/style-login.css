@@ -1,0 +1,178 @@
+/* .bg-color{
+    background-color: #fff;
+}
+body {  
+    background:#fff;  
+    font-family: 'Muli', sans-serif;  
+  }   */
+  /* h1 {  
+    color: #fff;  
+    padding-bottom: 2rem;  
+    font-weight: bold;  
+  }  
+  a {  
+    /* color: #333;  
+ } */
+   
+  a:hover {  
+    color: #E8D426;  
+    text-decoration: none;  
+  }  
+  .form-control:focus {  
+      color: #000;  
+      background-color: #fff;  
+      border: 2px solid #E8D426;  
+      outline: 0;  
+      box-shadow: none;  
+  }  
+  .btn {  
+    background: #f9b500;  
+    border: #E8D426;  
+  }  
+  .btn:hover {  
+    background: #f9b500;  
+    border: #E8D426;  
+  }  
+ */
+
+li{
+    display: inline;
+}
+/* .top-header a{
+    float: left;
+
+}
+.top-header a img{
+    padding: 25px 20px;
+    width: 100px;
+    height: 100px;
+
+}
+.top-header{
+  background-color: #fff;
+}
+.top-menu{
+    float: right;
+}
+.top-header nav{
+    padding: 40px 20px;
+
+}
+.top-menu-item a{
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 15px;
+    transition: all 0.2s;
+}
+.top{
+    width: 1200px;
+} */
+
+.header{
+    height: 650px;
+    
+    }
+     
+h1{
+    float: left;
+    margin-left: 10px;
+    color: white !important;
+}
+    
+    .nav{
+        float: right;
+        text-align: right;
+        padding-top: 7px;
+    }
+    
+    .nav ul li {
+    
+        display: inline;
+        padding:0 15px;
+    }
+    
+    .top-menu{
+        height: 70px;
+        padding: 20px 5px 5px 5px;
+        
+        background-color:#3d0806e1;
+    
+        
+    }
+    
+    .nav ul li a{
+        color:rgb(184, 183, 183);
+        transition: color .2s ease-in-out;
+    }
+    
+    .nav ul li a:hover {
+        color: yellow;
+    
+    }
+    .icon-log{
+      color: white;
+      width: 50px;
+      height: 50px;
+    }
+    
+    
+    .btn{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 30px;
+        color: #fff;
+        text-align: center;
+        font-size: 15px;
+        cursor: pointer;
+        
+    }
+    .btn-white{
+        background-color: #fff;
+        color: #444 !important;
+    }
+    .btn-header{
+        background-color: #f9b500;
+        margin-top: 40px;
+        height: 60px;
+        width: 300px;
+        font-size: 20px;
+    }
+.card{
+    background-color:#3d0806e1;
+    border: 0.5 solid #3d0806e1 ;
+    border-radius: 10%;
+    margin: 40px 100px 10px -100px;
+    padding-right: 40px !important;
+}    
+.d-flex{
+    color: white;
+}
+.top-menu h1{
+    color: white !important;
+}
+.edit-form{
+    width: 500px;
+    margin-left: -170px;
+    margin-right: 200px;
+}
+.login-form{
+    margin-left: 10px;
+    margin-right: -10px;
+    margin-top: -10px;
+
+}
+.register-form{
+    margin-left: 10px;
+    margin-right: -10px;
+    margin-top: -10px;
+
+}
+.seller-form{
+    width: 550px;
+    height: 450px;
+    margin-left: -170px;
+    margin-right: 200px;
+    margin-top: 40px;
+
+
+}
